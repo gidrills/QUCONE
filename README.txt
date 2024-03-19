@@ -1,4 +1,4 @@
-# QUCONE
+## QUCONE
 
 The aim of this thesis was to develop and compare the capabilities of a hybrid convolutional neural network (CNN) against those of a traditional CNN. Initially, significant attention was given to optimizing the traditional network to mitigate overfitting. This optimization process had to consider the constraint of the training dataset being limited to only 800 images, due to available computational resources.
 
