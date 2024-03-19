@@ -1,0 +1,23 @@
+train_losses hybrid:
+
+0.7241222284458302
+0.7116199356538279
+0.7032385534710355
+0.6954634322060479
+
+val_losses hybrid:
+
+0.715617
+0.70272315
+0.6932934
+0.6846229
+
+accuracies hybrid:
+
+0.50375
+0.4975
+0.51
+0.51875
+
+accuracy on training HYBRID:0.51875
+accuracy on validation HYBRID:0.545
