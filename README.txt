@@ -1,4 +1,5 @@
 # QUCONE
+
 The aim of this thesis was to develop and compare the capabilities of a hybrid convolutional neural network (CNN) against those of a traditional CNN. Initially, significant attention was given to optimizing the traditional network to mitigate overfitting. This optimization process had to consider the constraint of the training dataset being limited to only 800 images, due to available computational resources.
 
 The first model analyzed was the Real Amplitudes + ZZ Feature Map (RA + ZZ), already known in literature and used in binary classification. Subsequently, five hybrid models were developed, following an experimental approach as there is no universal rule to establish a priori which model is the best.
@@ -13,21 +14,20 @@ The results of the hybrid models were obtained using the statevector simulator o
 
 Finally, below are listed some aspects through which the study could be further deepened and improved:
 
-Increase the size of the training dataset: This would entail greater generalization capability and, consequently, a reduction in overfitting for all models.
-Increase the number of epochs until convergence to a fixed value of the learning curve. In this thesis, this was not possible due to the limited dataset, leading to the use of early stopping.
-Further optimize the neural networks: It would be interesting to understand how the results vary with different parameters such as the optimizer, learning rate, and loss function.
-Considering that the dataset has been preprocessed and therefore some information has necessarily been lost (section 3.2), it would be interesting to understand how this influences accuracy results.
+- Increase the size of the training dataset: This would entail greater generalization capability and, consequently, a reduction in overfitting for all models.
+- Increase the number of epochs until convergence to a fixed value of the learning curve. In this thesis, this was not possible due to the limited dataset, leading to the use of early stopping.
+- Further optimize the neural networks: It would be interesting to understand how the results vary with different parameters such as the optimizer, learning rate, and loss function.
+- Considering that the dataset has been preprocessed and therefore some information has necessarily been lost (section 3.2), it would be interesting to understand how this influences accuracy results.
 
-
-# Model Repository
+## Model Repository
 
 This repository contains various trained models used in the project. For additional models, please refer to the accompanying thesis.pdf file.
 
-## Model Overview
+### Model Overview
 
 In the "models" folder, you'll find three relevant models that have been uploaded. Each model is accompanied by a "ModelResult" folder, which contains essential evaluation data and graphs.
 
-### ModelResult Folder Contents:
+#### ModelResult Folder Contents:
 
 - **AT**: Accuracy Training (Accuracy on the training set).
 - **LVT**: Loss Validation/Training (Loss curves on the training and validation sets).
@@ -38,7 +38,8 @@ Additionally, each ModelResult folder contains:
 - A `.txt` file containing all the data used to produce the graphs.
 - A `.pt` file containing the trained PyTorch model.
 
-## Usage
+### Usage
+
 To load a trained PyTorch model from the ".pt" file, use the following command:
 
 ```python
